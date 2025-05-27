@@ -1,12 +1,11 @@
 ````tabs
-
-tab: Toolchain Management - Haskell
-```sh
-ghcup
-```
-tab: Toolchain Management - Rust
+tab: Rust
 ```sh
 rustup
+```
+tab: Haskell
+```sh
+ghcup
 ```
 ````
 
