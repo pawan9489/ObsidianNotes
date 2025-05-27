@@ -1,9 +1,11 @@
-
 ```tabs
-
-tab: TAB ONE
-Content of TAB ONE
-tab: TAB TWO
-Content of TAB TWO
+tab: Toolchain Management - Haskell
+```haskell
+ghcup
 ```
-
+````tabs
+tab: Toolchain Management - Rust
+```rust
+rustup
+```
+```
