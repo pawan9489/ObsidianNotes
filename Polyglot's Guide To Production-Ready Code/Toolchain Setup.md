@@ -3,9 +3,9 @@
 A **toolchain** in software development is a set of programming tools used to perform a complex software development task or to create a software product. For compiled languages like Haskell and Rust, this typically includes:
 
 * **Compiler:** Translates source code into machine code or an intermediate bytecode (e.g., GHC for Haskell, `rustc` for Rust).
-* **Build System/Manager:** Automates the process of compiling source code, managing dependencies, linking libraries, and producing executables or libraries (e.g., Cabal/Stack for Haskell, Cargo for Rust).
+* **Build System/Manager:** Automates the process of compiling source code, managing dependencies, linking libraries, and producing executable's or libraries (e.g., Cabal/Stack for Haskell, Cargo for Rust).
 * **Package Manager:** Helps in downloading, installing, and managing external libraries (dependencies) that your project uses. Often integrated with the build system.
-* **Language Server (Optional but common):** Provides features like autocompletion, go-to-definition, and error checking in code editors (e.g., HLS for Haskell, `rust-analyzer` for Rust).
+* **Language Server (Optional but common):** Provides features like auto-completion, go-to-definition, and error checking in code editors (e.g., HLS for Haskell, `rust-analyzer` for Rust).
 * **Version Manager (Often separate or integrated):** Allows developers to install and switch between different versions of the compiler and other tools (e.g., GHCup for Haskell, rustup for Rust).
 * **Testing Frameworks:** Tools to write and run tests.
 * **Linters/Formatters:** Tools to ensure code quality and consistent style.
@@ -14,12 +14,11 @@ Effectively, a toolchain provides the essential infrastructure to go from source
 
 ---
 
-## Installation of Toolchains (Linux)
-
-Here we'll look at how to get the basic toolchains up and running on a Linux system.
+## Installation of Toolchain
+Here we'll look at how to get the basic toolchain up and running on a Linux system.
 
 ~~~tabs
-tab: Haskell (Linux)
+tab: Haskell
 For Haskell on Linux, **GHCup** is the most common and recommended way to install and manage the Glasgow Haskell Compiler (GHC), the Cabal build tool, Stack (another build tool), and the Haskell Language Server (HLS).
 
 **1. Install GHCup:**
@@ -61,7 +60,7 @@ stack --version
 haskell-language-server-wrapper --version
 ```
 
-tab: Rust (Linux)
+tab: Rust
 For Rust on Linux, **rustup** is the official and recommended tool to install and manage Rust versions and associated tools like Cargo (package manager and build system).
 
 **1. Install rustup:**
@@ -80,15 +79,14 @@ cargo --version
 rustup --version
 ```
 ~~~
-
 ---
 
-## Switching Toolchain Versions (Linux)
+## Switching Toolchain Versions
 
-Once installed, you'll often need to switch between different versions of compilers or toolchains for different projects.
+Once installed, you'll often need to switch between different versions of compilers or toolchain for different projects.
 
 ~~~tabs
-tab: Haskell (Linux)
+tab: Haskell
 **Using GHCup:** (Manages GHC, Cabal, Stack, HLS versions)
 
 * **List available GHC versions:**
@@ -132,7 +130,7 @@ Stack primarily manages GHC versions on a per-project basis through the `resolve
     stack --resolver lts-18.28 build
     ```
 
-tab: Rust (Linux)
+tab: Rust
 **Using rustup:** (Manages `rustc`, `cargo`, and associated components)
 
 * **Update all installed toolchains (and rustup itself):**
@@ -180,5 +178,5 @@ tab: Rust (Linux)
     rustup toolchain uninstall <toolchain_name>
     ```
 ~~~
-
 ---
+
