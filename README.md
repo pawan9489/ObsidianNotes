@@ -1,3 +1,3 @@
 # ObsidianNotes
 
-https://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@github.com/pawan9489/ObsidianNotes.git
+https://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@github.com/pawan9489/ObsidianNotes.git
