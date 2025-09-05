@@ -17,7 +17,7 @@ sudo dnf autoremove -y
 
 # Step 3: Refresh firmware data
 echo "Step 3/5: Refreshing firmware data..."
-sudo fwupdmgr refresh
+sudo fwupdmgr refresh --force
 
 # Step 4: Get a list of available firmware updates
 echo "Step 4/5: Getting a list of available firmware updates..."
